@@ -12,8 +12,8 @@ module Impressionist
     end
 
     def update
-      klass.
-      update_counters(id, column_name => result)
+      receiver.increment!(:impressions_count)
+      #klass.update_counters(id, column_name => result)
     end
 
     private
